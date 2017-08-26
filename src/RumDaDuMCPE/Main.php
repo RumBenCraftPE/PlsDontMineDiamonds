@@ -2,7 +2,7 @@
 
 namespace RumDaDuMCPE;
 
-class Main extends \pocketmine\PluginBase implements \pocketmine\event\Listener {
+class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Listener {
 	public function onEnable() {
 		$this->getServer()->getPluginManager()->registerEvent($this, $this);
 	}
