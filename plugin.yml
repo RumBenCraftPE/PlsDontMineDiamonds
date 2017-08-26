@@ -1,0 +1,5 @@
+name: DiamondThief
+api: [3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.0-ALPHA7]
+author: RumDaDuMCPE
+main: RumDaDuMCPE\Main
+version: "0.1"
