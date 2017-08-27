@@ -9,7 +9,7 @@ class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Li
 
 	public function onBreak(\pocketmine\event\block\BlockBreakEvent $event) {
 		if (($block = $event->getBlock())->getId() === 56) {
-			if (!(($player = $event->getPlayer())->isOp()) {
+			if (!(($player = $event->getPlayer())->isOp())) {
 				foreach ($this->getServer()->getOnlinePlayers() as $dudeordudette) {
 					if ($dudeordudette->isOp()) {
 						$dudeordudette->sendMessage("§l§a".$player->getName()." §eis trying to break a §bDiamond §eBlock!\n");
